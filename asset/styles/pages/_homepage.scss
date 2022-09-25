@@ -1,7 +1,13 @@
+.navheader {
+    background-color: $secondwhite-color;
+}
+
 .header {
     background-color: $secondwhite-color;
+    position: relative;
+    padding-top: 50px;
     .header-title {
-        font-size: $h2_size;
+        font-size: $h3_size;
         font-weight: bold;
         color: $black_color;
         margin-bottom: 10px;
@@ -11,7 +17,10 @@
         margin-bottom: 30px;
     }
     .header-image {
-        width: 100%;
+        width: 800px;
+        top: 0;
+        right: 0;
+        position: absolute;
     }
     @media screen and (max-width: 768px) {
         .header-title {
@@ -63,14 +72,6 @@
         font-size: $h5_size;
         font-weight: bold;
     }
-    @media screen and (max-width: 768px) {
-        .why {
-            .why-title {
-                font-size: $h3_size;
-                margin-top: -50px;
-            }
-        }
-    }
 }
 
 .testimonial {
@@ -100,6 +101,21 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        padding-bottom: 150px;
+        margin-bottom: 100px;
+        .header-image {
+            top: 400px;
+            right: 0;
+            position: absolute;
+        }
+        @media screen and (max-width: 768px) {
+            .header-title {
+                font-size: $h3_size;
+                margin-top: -50px;
+            }
+        }
+    }
     .content {
         margin-top: 50px;
     }
@@ -109,5 +125,20 @@
     }
     .testimonial {
         margin-top: 50px;
+    }
+    .why {
+        .why-title {
+            text-align: center;
+        }
+    }
+    .sewa {
+        .header {
+            .header-title {
+                padding-top: 60px;
+            }
+        }
+    }
+    .footer {
+        margin-top: -80px;
     }
 }

@@ -20,7 +20,12 @@
         font-weight: 400;
         font-size: $body_normal_size;
         display: block;
-        color: $black-color
+        color: $black-color;
+        transition: 0.8s;
+        &:hover {
+            color: $primary-color;
+            font-weight: bold;
+        }
     }
     .socials {
         .social-link {

@@ -1,18 +1,16 @@
 nav {
     display: flex;
     background-color: $secondwhite-color;
-    justify-content: space-around;
-    height: 100px;
+    height: 120px;
     color: $primary_color;
     align-items: center;
     .slide {
         top: -1000px;
     }
     ul {
-        display: flex;
         list-style: none;
-        width: 32%;
         justify-content: space-between;
+        .slide {}
         @media screen and (max-width: 768px) {
             width: 50%;
         }
@@ -34,8 +32,11 @@ nav {
             a {
                 color: $black_color;
                 text-decoration: none;
+                transition: 0.4s;
                 &:hover {
-                    color: $white_color;
+                    color: $primary_color;
+                    font-weight: bold;
+                    text-decoration: underline;
                 }
             }
         }
