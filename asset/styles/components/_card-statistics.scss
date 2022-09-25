@@ -1,0 +1,16 @@
+.card {
+    transition: 1s;
+    &:hover {
+        margin-left: -10px;
+    }
+    .card-body {
+        .card-title {
+            font-size: $h6_size;
+            font-weight: bold;
+        }
+        .card-description {
+            font-size: $body_normal_size;
+            font-weight: bold;
+        }
+    }
+}

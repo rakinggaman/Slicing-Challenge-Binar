@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    background-color: $secondwhite-color;
+    justify-content: space-around;
+    height: 100px;
+    color: $primary_color;
+    align-items: center;
+    .slide {
+        top: -1000px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        width: 32%;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 576px) {
+            position: absolute;
+            top: 0px;
+            right: 300px;
+            height: 100vh;
+            width: 300px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $secondwhite_color;
+            z-index: 1;
+            transform: translateX(100%);
+            transition: all 1s;
+        }
+        li {
+            a {
+                color: $black_color;
+                text-decoration: none;
+                &:hover {
+                    color: $white_color;
+                }
+            }
+        }
+        /*Toggle
+*/
+    }
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        position: relative;
+        input {
+            position: absolute;
+            width: 52px;
+            height: 38px;
+            opacity: 0;
+            left: -14px;
+            top: -6px;
+            cursor: pointer;
+            z-index: 2;
+            &:checked~span:nth-child(2) {
+                transform: rotate(45deg) translate(0px, -5px);
+                transform-origin: 0 0;
+            }
+            &:checked~span:nth-child(4) {
+                transform: rotate(-45deg);
+                transform-origin: 0 0;
+            }
+            &:checked~span:nth-child(3) {
+                transform: scale(0);
+                transform-origin: 0 0;
+            }
+        }
+        span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            background-color: $black_color;
+            border-radius: 3px;
+            transition: all 0.5s;
+            &:nth-child(2) {}
+        }
+        @media screen and (max-width: 576px) {
+            display: flex;
+            z-index: 1;
+        }
+    }
+}
+
+
+/*Animation
+*/

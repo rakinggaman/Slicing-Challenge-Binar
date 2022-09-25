@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    background-color: #FDFDFD;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 60px 0;
+    .section-title {
+        font-size: $h2_size;
+        font-weight: 600;
+        color: $black_color;
+    }
+    .section-subtitle {
+        font-size: $h4_size;
+        font-weight: 600;
+        color: $black_color;
+    }
+    .section-description {
+        color: $darkgray_color;
+    }
+}
