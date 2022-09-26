@@ -100,6 +100,54 @@
     }
 }
 
+.search {
+    padding: 36px;
+    background: $white_color;
+    border-radius: 8px;
+    margin-top: -50px;
+    position: relative;
+    border-bottom: 3px solid #CCCCCC;
+    border-left: 2px solid #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+    .input-select {
+        height: 32px;
+        width: 210px;
+        font-size: $body_smaller_size;
+        border: 2px solid #CCCCCC;
+        color: #CCCCCC;
+        padding: 5px 10px;
+    }
+    .inline {
+        width: 100px;
+        border: 1px solid black;
+        transform: rotate(90deg);
+    }
+    .search-title {
+        font-size: $body_normal_size;
+        font-weight: 700;
+        color: $black_color;
+        span {
+            color: $black_color;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: $h3_size;
+        }
+    }
+    .search-subtitle {
+        color: $black_color;
+    }
+    @media screen and (max-width: 768px) {
+        .search-items {
+            flex-direction: column;
+            gap: 10px !important;
+            .inline {
+                width: 70%;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header {
         padding-bottom: 150px;
@@ -132,6 +180,12 @@
         }
     }
     .sewa {
+        margin-top: -60px;
+    }
+    .faq {
+        margin-top: -150px;
+    }
+    .sewa {
         .header {
             .header-title {
                 padding-top: 60px;
@@ -140,5 +194,10 @@
     }
     .footer {
         margin-top: -80px;
+    }
+    .search {
+        border-top: 2px solid #CCCCCC;
+        margin-top: 50px;
+        margin-bottom: 60px;
     }
 }
