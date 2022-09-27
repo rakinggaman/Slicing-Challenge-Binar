@@ -111,7 +111,7 @@
     border-right: 2px solid #CCCCCC;
     .input-select {
         height: 32px;
-        width: 210px;
+        width: 216px;
         font-size: $body_smaller_size;
         border: 2px solid #CCCCCC;
         color: #CCCCCC;
@@ -128,9 +128,6 @@
         color: $black_color;
         span {
             color: $black_color;
-        }
-        @media screen and (max-width: 768px) {
-            font-size: $h3_size;
         }
     }
     .search-subtitle {

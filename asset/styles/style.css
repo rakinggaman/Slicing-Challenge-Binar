@@ -440,7 +440,7 @@ nav .menu-toggle span {
 
 .search .input-select {
   height: 32px;
-  width: 210px;
+  width: 216px;
   font-size: 12px;
   border: 2px solid #CCCCCC;
   color: #CCCCCC;
@@ -462,12 +462,6 @@ nav .menu-toggle span {
 
 .search .search-title span {
   color: #151515;
-}
-
-@media screen and (max-width: 768px) {
-  .search .search-title {
-    font-size: 36px;
-  }
 }
 
 .search .search-subtitle {
